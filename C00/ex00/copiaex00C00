@@ -1,0 +1,25 @@
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: candrade <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/02/25 13:41:25 by candrade          #+#    #+#             */
+/*   Updated: 2021/02/25 14:00:50 by candrade         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include<unistd.h>
+#include<stdio.h>
+
+
+void ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
+
+ 
+	int  main(void)
+{
+		ft_putchar('a');
+}

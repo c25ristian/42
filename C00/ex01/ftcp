@@ -1,0 +1,31 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: candrade <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/02/25 17:41:07 by candrade          #+#    #+#             */
+/*   Updated: 2021/02/25 18:18:25 by candrade         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include<stdio.h>
+#include<unistd.h>
+
+void ft_print_reverse_alphabet()
+{
+	char alpha;
+		alpha= 'z';
+			while(alpha >= 'a')
+			{
+				write(1, &alpha, 1);
+				alpha--;
+			}
+}
+
+int main()
+{
+	ft_print_reverse_alphabet();
+}
+
